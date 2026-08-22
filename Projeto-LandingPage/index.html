@@ -1,81 +1,202 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title> Escola DNC </title>
-</head>
-<body>
-    <!-- MENU SUPERIOR -->
-    <div id="menusuperior">
-        <a href="https://www.escoladnc.com.br/"> <img src="./imagens/logo.svg" id="logo" alt="ERROR"> </a>
-    
-        <h1 id="titulo-menusuperior"> 
-            Dê os primeiros passos da <br>
-            sua carreira em Tecnologia 
-        </h1>
-        <p id="texto-menusuperior"> 
-            Inscreva-se no curso gratuito de Introdução à <br>
-            Tecnologia da DNC School e aprenda os principais <br>
-            fundamentos para construir experiências efetivas. 
-        </p>
-    </div>
 
-    <!-- MENU INFORMACIONAL -->
-    <div id="menuinformacional">
-        <p class="textoinformativo"> <img src="icones/certificado.png" class="icone" alt=""> Certificado de conclusão </p>
-        <p class="textoinformativo"> <img src="icones/relogio.svg" class="icone" alt=""> 4 horas de conteúdo </p>
-        <p class="textoinformativo"> <img src="icones/aulasgravadas.png" class="icone" alt=""> Aulas online gravadas </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DNC School — Introdução à Tecnologia</title>
+  <meta name="description"
+    content="Curso gratuito de Introdução à Tecnologia da DNC School. Aprenda os fundamentos para construir sua carreira em tech, com certificado e aulas gravadas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <a class="pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO / NAVEGAÇÃO -->
+  <header id="topo">
+    <div class="container barra-nav">
+      <a href="https://www.escoladnc.com.br/" class="marca">
+        <img src="assets/brand/logo.svg" alt="DNC School" id="logo">
+      </a>
+      <nav class="nav-principal" aria-label="Navegação principal">
+        <a href="#video">O curso</a>
+        <a href="#depoimentos">Depoimentos</a>
+      </nav>
+      <a href="#formulario" class="botao botao-primario botao-nav">Inscreva-se grátis</a>
     </div>
+  </header>
+
+  <main id="conteudo-principal">
+
+    <!-- HERO -->
+    <section id="hero" aria-labelledby="titulo-hero">
+      <div class="container hero-grade">
+        <div class="hero-texto">
+          <p class="rotulo">Curso gratuito · Introdução à Tecnologia</p>
+          <h1 id="titulo-hero">
+            Dê os primeiros passos da sua carreira em tecnologia
+          </h1>
+          <p class="texto-hero">
+            Inscreva-se no curso gratuito de Introdução à Tecnologia da DNC
+            School e aprenda os principais fundamentos para construir
+            experiências efetivas.
+          </p>
+          <div class="hero-acoes">
+            <a href="#formulario" class="botao botao-primario">Quero começar agora</a>
+            <a href="#video" class="botao botao-texto">Assistir apresentação ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA INFORMACIONAL -->
+    <section id="beneficios" aria-label="Benefícios do curso">
+      <div class="container grade-beneficios">
+        <div class="item-beneficio">
+          <span class="selo-icone"><img src="assets/icons/certificado.png" alt="" class="icone"></span>
+          <div>
+            <p class="beneficio-titulo">Certificado de conclusão</p>
+            <p class="beneficio-texto">Comprove sua qualificação no mercado</p>
+          </div>
+        </div>
+        <div class="item-beneficio">
+          <span class="selo-icone"><img src="assets/icons/relogio.svg" alt="" class="icone"></span>
+          <div>
+            <p class="beneficio-titulo">4 horas de conteúdo</p>
+            <p class="beneficio-texto">Direto ao ponto, sem enrolação</p>
+          </div>
+        </div>
+        <div class="item-beneficio">
+          <span class="selo-icone"><img src="assets/icons/aulasgravadas.png" alt="" class="icone"></span>
+          <div>
+            <p class="beneficio-titulo">Aulas online gravadas</p>
+            <p class="beneficio-texto">Estude no seu ritmo, quando quiser</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- SEÇÃO VÍDEO -->
-    <div id="secaovideo">
-        <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4" title="DNC - A escola inovadora que forma profissionais de alta perfomance" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div>
-            <h1 id="titulo-video">
-                Aprenda com especialistas e <br>
-                comece seu primeiro projeto
-            </h1> <br> <br>
-            <p id="texto-video">
-                Conheça o processo de desenvolvimento e entenda como utilizar <br>
-                os principais métodos e ferramentas da área para resolver <br>
-                problemas complexos. <br> <br>
-                Conquiste seu certificado e desenvolva um projeto prático para <br>
-                aplicar seus conhecimentos.
-            </p>
+    <section id="video" aria-labelledby="titulo-video">
+      <div class="container video-grade">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/ITxGkd9h4n4"
+            title="DNC - A escola inovadora que forma profissionais de alta performance" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy">
+          </iframe>
         </div>
-    </div>
-
-    <!-- CARROSEL -->
-    <div id="carrosel">
-        <h1 id="titulo-carrosel"> Mais de 500 alunos já iniciaram seus estudos </h1>
-        <!-- DIVISÃO DOS CARDS -->
-        <div id="div-cards">
-            <img id="seta-esquerda" onclick="RolarParaEsquerda()" class="seta" src="icones/seta-esquerda.png" alt="">
-            <img id="Leonardo" class="card" src="cards/Leonardo.svg" alt="">
-            <img id="Bruna" class="card" src="cards/Bruna.png" alt="">
-            <img id="Samantha" class="card" src="cards/Samantha.png" alt="">
-            <img id="seta-direita" onclick="RolarParaDireita()" class="seta" src="icones/seta-direita.png" alt="">
+        <div class="video-texto">
+          <h2 id="titulo-video">
+            Aprenda com especialistas e comece seu primeiro projeto
+          </h2>
+          <p>
+            Conheça o processo de desenvolvimento e entenda como utilizar os
+            principais métodos e ferramentas da área para resolver problemas
+            complexos.
+          </p>
+          <p>
+            Conquiste seu certificado e desenvolva um projeto prático para
+            aplicar seus conhecimentos.
+          </p>
         </div>
-    </div>
+      </div>
+    </section>
 
-<!-- FORMULÁRIO -->
-    <div id="formulario">
-        <h1 id="titulo-formulario">
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" aria-labelledby="titulo-depoimentos">
+      <div class="container">
+        <h2 id="titulo-depoimentos">Mais de 500 alunos já iniciaram seus estudos</h2>
+
+        <div class="carrossel" data-carrossel role="region" aria-roledescription="carrossel"
+          aria-label="Depoimentos de alunos">
+
+          <button type="button" class="seta seta-esquerda" data-anterior aria-label="Depoimento anterior">
+            <img src="assets/icons/seta-esquerda.png" alt="">
+          </button>
+
+          <div class="carrossel-janela">
+            <ul class="carrossel-trilho" data-trilho>
+              <li class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="1 de 3">
+                <img src="assets/cards/Leonardo.svg"
+                  alt="“Gostei muito da metodologia e da plataforma da Escola DNC. Os materiais são todos muito bons” — Leonardo, desenvolvedor Back-End"
+                  class="card">
+              </li>
+              <li class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="2 de 3">
+                <img src="assets/cards/Bruna.png"
+                  alt="“O curso da DNC School foi o ponto de partida da minha transição de carreira. Hoje já consegui minha primeira vaga na área!” — Bruna, desenvolvedora Front-End"
+                  class="card">
+              </li>
+              <li class="carrossel-slide" role="group" aria-roledescription="slide" aria-label="3 de 3">
+                <img src="assets/cards/Samantha.png"
+                  alt="“O curso da DNC School foi a mudança que eu precisava para alcançar meus objetivos profissionais.” — Samantha, desenvolvedora Front-End"
+                  class="card">
+              </li>
+            </ul>
+          </div>
+
+          <button type="button" class="seta seta-direita" data-proximo aria-label="Próximo depoimento">
+            <img src="assets/icons/seta-esquerda.png" alt="">
+          </button>
+
+          <div class="carrossel-marcadores" data-marcadores role="tablist" aria-label="Selecionar depoimento"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO -->
+    <section id="formulario" aria-labelledby="titulo-formulario">
+      <div class="container formulario-grade">
+        <div class="formulario-intro">
+          <p class="rotulo rotulo-escuro">Comece por aqui</p>
+          <h2 id="titulo-formulario">
             Comece agora mesmo e dê o próximo passo da sua carreira
-        </h1>
-        <form action="https://api.sheetmonkey.io/form/q8JddiiDvDzdKMtYW2SJHo" method="post">
-           <input type="text" placeholder="Nome" name="Name" required> <br>
-           <input type="email" placeholder="E-mail" name="Email" required> <br>
-           <input type="number" placeholder="Telefone" name="Phone"> <br>
-           <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-           <button type="submit"> Acesse a ementa grátis </button>
+          </h2>
+          <p class="formulario-subtexto">
+            Preencha seus dados e receba acesso imediato à ementa completa do curso.
+          </p>
+        </div>
+
+        <form action="https://api.sheetmonkey.io/form/q8JddiiDvDzdKMtYW2SJHo" method="post" class="cartao-formulario">
+          <div class="campo">
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" placeholder="Seu nome completo" name="Name" autocomplete="name" required>
+          </div>
+          <div class="campo">
+            <label for="campo-email">E-mail</label>
+            <input type="email" id="campo-email" placeholder="voce@email.com" name="Email" autocomplete="email"
+              required>
+          </div>
+          <div class="campo">
+            <label for="campo-telefone">Telefone</label>
+            <input type="tel" id="campo-telefone" placeholder="(00) 00000-0000" name="Phone" autocomplete="tel">
+          </div>
+          <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time">
+          <button type="submit" class="botao botao-primario botao-formulario">Acesse a ementa grátis</button>
+          <p class="aviso-privacidade">Seus dados estão seguros. Sem spam.</p>
         </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer id="rodape">
+    <div class="container rodape-grade">
+      <img src="assets/brand/logo.svg" alt="DNC School" class="rodape-logo">
+      <p>© 2026 DNC School. Todos os direitos reservados.</p>
     </div>
-    <script src="index.js"></script>
+  </footer>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
